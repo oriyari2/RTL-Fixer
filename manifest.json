@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "מתקן יישור לימין (RTL Fixer)",
+  "version": "2.0",
+  "description": "מסדר את יישור הטקסט לימין באופן אוטומטי לאחר תרגום.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "סדר טקסט לימין (גיבוי ידני)"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
