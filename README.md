@@ -1,4 +1,5 @@
-RTL Fixer - Chrome Extension 🌐
+# RTL Fixer - Chrome Extension 🌐
+
 A lightweight and fast Google Chrome extension that automatically fixes text direction (Right-to-Left) and layout alignment after using Google's built-in translation to Hebrew.
 
 When Chrome translates pages from English to Hebrew, it usually keeps the original Left-to-Right (LTR) structure. This results in hard-to-read Hebrew text, broken layouts, and sidebars remaining on the wrong side. This extension detects the translation event and instantly applies CSS rules to correct the page's directionality.
@@ -6,11 +7,10 @@ When Chrome translates pages from English to Hebrew, it usually keeps the origin
 📸 Demo (Before & After)
 Before (Without the extension)
 The page structure remains LTR. The sidebar is on the left, and the text is misaligned and hard to read:
-<img width="1906" height="852" alt="image" src="https://github.com/user-attachments/assets/a19bc749-3cf8-4373-8915-7d3e88d9aa55" />
-
+[](<img width="1906" height="852" alt="image" src="https://github.com/user-attachments/assets/a19bc749-3cf8-4373-8915-7d3e88d9aa55" />)
 After (With the extension)
 The extension detects the translation, changes the direction to RTL, and aligns the text to the right. The sidebar moves to its natural place on the right, making reading comfortable:
-<img width="1856" height="758" alt="image" src="https://github.com/user-attachments/assets/d82db0fd-dfb2-401a-a167-4a22982a4026" />
+[](<img width="1856" height="758" alt="image" src="https://github.com/user-attachments/assets/d82db0fd-dfb2-401a-a167-4a22982a4026" />)
 
 ✨ Key Features
 Fully Automatic: Uses a MutationObserver to detect translation in real-time and instantly aligns the text, requiring no user action.
